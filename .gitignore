@@ -1,0 +1,60 @@
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignorar arquivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar diretórios de dependências
+node_modules/
+bower_components/
+
+# Ignorar diretórios de build
+dist/
+build/
+tmp/
+temp/
+.cache/
+
+# Ignorar configurações de IDEs/editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignorar arquivos de ambiente
+.env
+.env.*.local
+
+# Ignorar arquivos de sistema operacional Windows
+ehthumbs.db
+Icon?
+*.bak
+
+# Ignorar arquivos temporários e backups
+*.swp
+*.tmp
+*.temp
+*.old
+*.backup
+*.orig
+
+# Ignorar arquivos compactados
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignorar arquivos do diretório pessoal Pichau
+C:/Users/Pichau/*
+!C:/Users/Pichau/Documents/**
+
+# Ignorar configurações específicas de navegador ou cache
+.cache/
+.npm/
+.pnpm-debug.log
