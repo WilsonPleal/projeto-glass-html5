@@ -24,11 +24,19 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="specs.html">Especificações</a></li>
-                    <li><a href="fotos.html">Fotos</a></li>
-                    <li><a href="multimidia.html">Multimídia</a></li>
-                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                    <li onmouseover="mudaFoto('_imagens/home.png')"
+                        onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a
+                            href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
+                        onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a
+                            href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale
+                            conosco</a></li>
                 </ul>
             </nav>
         </header>
@@ -153,7 +161,68 @@
         </footer>
     </div>
 
+    <script>
+        function mudaFoto(foto) {
+            document.getElementById("icone").src = foto;
+        }
+    </script>
 
+    <!--    AQUI E UM SIMPLES CODIGO JS PARA MOSTRAR, ACENDER E AO MOVER QUEBRAR A LAMPADA!
+    
+    <img id="luz" src="/_imagens/lampada-apagada.jpg" alt="" onclick="lampadaApagada()" onmouseleave="lampadaQuebra()">
+ <script>
+    function lampadaApagada(){
+     document.getElementById("luz"). src="/_imagens/lampada-acesa.jpg";
+       
+    }
+    function lampadaQuebra(){
+        document.getElementById("luz").src="/_imagens/lampada-quebrada.jpg";
+    }
+
+ </script>-->
+
+    <!-- AQUEI O SCRIPT TEVE AUTERAÇAO COM IF-esle PARA MANTER APAGADA, ACESA E QUEBRADA a LAMPADA!!!
+ 
+<img id="luz" src="/_imagens/lampada-apagada.jpg" alt="" onmouseenter="mudaLampada(2)" onmouseleave="mudaLampada(1)"
+        onclick="mudaLampada(3)">
+    <script>
+        let quebrada = false;
+        function mudaLampada(tipo) {
+            if (tipo == 1) {
+                arquivo = "_imagens/lampada-apagada.jpg";
+            }
+            if (tipo == 2) {
+                arquivo = "_imagens/lampada-acesa.jpg";
+            }
+            if (tipo == 3) {
+                arquivo = "_imagens/lampada-quebrada.jpg";
+            }
+            if (!quebrada) {
+                document.getElementById("luz").src = arquivo;
+                if (tipo == 3) {
+                    quebrada = true;
+                }
+            }
+
+        }
+    </script>
+    -->
+
+
+    <!-- AQUI TEMOS A MESMA COISA FEITA EM CIMA DE UMA FORMA BEM MAIS SIMPLIFICADA! MELHOR ESCOLHA!!!
+    
+<img id="luz" src="/_imagens/lampada-apagada.jpg" alt="la" onmouseleave="mudaLampada('lampada-apagada')" onmouseenter="mudaLampada('lampada-acesa')" onclick="mudaLampada('lampada-quebrada')">;
+    <script>
+            let quebrada = false;
+        function mudaLampada(tipo){
+            if(!quebrada){
+                document.getElementById("luz").src =" _imagens/"+ tipo + ".jpg";
+            }
+            if(tipo == 'lampada-quebrada'){
+                quebrada = true;
+            }
+        }
+    </script>-->
 </body>
 
 </html>
