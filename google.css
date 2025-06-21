@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    display: inline-block;
+    overflow: hidden;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+article h1{
+    font-size: 15pt;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 5px;
+    padding: 0;
+}
+article h2{
+    font-size: 13pt;
+    color: #888;
+    margin: 0;
+}
+article{
+    position: relative;
+    margin: 150px;
+    right: 150px;
+    bottom: 80px;
+    overflow: hidden;
+
+}
+img .img-dir{
+    display: block;
+    float: right;
+    margin-left: 5px;
+}
