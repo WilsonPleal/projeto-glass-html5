@@ -3,9 +3,6 @@
 section#conteudo {
     width: 1000px;
     margin: auto;
-    overflow: hidden;
-    overflow-y: hidden;
-    box-sizing: border-box;
 
 }
 iframe#frame-spec{
@@ -14,13 +11,9 @@ iframe#frame-spec{
     width: 400px;
     height: 280px;
     border: none;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    box-sizing: border-box;
+
 }
 iframe#frame-spec::-webkit-scrollbar{
     display: none;
-    overflow: hidden;
-    overflow-y: hidden;
-    box-sizing: border-box;
+
 }

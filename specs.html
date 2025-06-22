@@ -56,11 +56,42 @@
 
                 Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass.
                 Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+                <!--
+                ESSA SESSAO EU NAO CONSEGUI COLOCAR, POR ISSO CRIEI UM NOVO A HREF COM VSG PARA FICAR MAIS ATUAL
+                <section id="conteudo">
+                    <img src="/_imagens/glass-esquema-marcado.jpg" usemap="meumapa" alt="">
+                    <map name="meumapa">
+                        <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela" alt="indica a tela">
+                        <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela" alt="indica a camera">
+                        <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela" alt="indica o gadgets">
+                        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela" alt="indica os sensores">
+                        
+                    </map>-->
 
-            <section id="conteudo">
-                <img src="/_imagens/glass-esquema-marcado.jpg" alt="">
-                <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
-            </section>
+
+                    <!--aQUI EU USEI O AHREF VSG PARA FICAR ATUAL E MUITO MAIS SIMPLES-->
+                <section id="conteudo">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" widht="400" height="400">
+                        <image href="/_imagens/glass-esquema-marcado.jpg" widht="230" height="230"></image>
+                        <a href="google-glass.html#tela" target="janela">
+                            <rect x="150" y="170" width="75" height="40" fill="transparent" />
+                        </a>
+                        <a href="google-glass.html#camera" target="janela">
+                            <circle cx="129" cy="200" r="12" fill="transparent" />
+                        </a>
+                        <a href="google-glass.html#gadgets" target="janela">
+                            <circle cx="63" cy="41" r="12" fill="transparent" />
+                        </a>
+                        <a href="google-glass.html#sensores" target="janela">
+                            <polygon points=" 20,115 19,130 45,215 75,190" fill="transparent" />
+                        </a>
+                    </svg>
+
+
+
+
+                    <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+                </section>
             </article>
         </section>
 
